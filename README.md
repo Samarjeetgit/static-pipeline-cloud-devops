@@ -1,0 +1,1 @@
+# static-pipeline-cloud-devops
