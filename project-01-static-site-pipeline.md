@@ -1,5 +1,4 @@
-[project-01-static-site-pipeline (2).md](https://github.com/user-attachments/files/34881687/project-01-static-site-pipeline.2.md)
-[project-01-static-site-pipeline (1).md](https://github.com/user-attachments/files/34881691/project-01-static-site-pipeline.1.md)
+
 # Project 01: Static Site Pipeline (Beginner)
 
 ## Problem Statement
