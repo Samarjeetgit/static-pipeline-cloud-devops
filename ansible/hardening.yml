@@ -1,0 +1,25 @@
+---
+- name: Local Infrastructure System Hardening
+  hosts: localhost
+  connection: local
+  become: true
+  tasks:
+    - name: Ensure UFW firewall is installed
+      apt:
+        name: ufw
+        state: present
+
+    - name: Enforce default deny incoming firewall policy
+      ufw:
+        direction: incoming
+        policy: deny
+
+    - name: Allow local loopback and essential cluster traffic
+      ufw:
+        rule: allow
+        port: '8080'
+        proto: tcp
+
+    - name: Enable UFW firewall
+      ufw:
+        state: enabled
